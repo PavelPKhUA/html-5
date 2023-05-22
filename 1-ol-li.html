@@ -1,44 +1,135 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Заголовок документу</title>
+    <title>Словник</title>
     <meta charset="utf-8" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#151313">
+    <meta name="theme-color" content="#ffffff">
+
+    <style type="text/css">
+      h1 {
+        color: red;
+      }
+    </style>
   </head>
   <body>
-    <ol reversed>
-      <li>Coffee</li>
-      <li>Tea</li>
-      <li>Milk</li>
-    </ol>
-    <ol start="5">
-      <li>Coffee</li>
-      <li>Tea</li>
-      <li>Milk</li>
-    </ol>
-    <ol type="1">
-      <li>Coffee</li>
-      <li>Tea</li>
-      <li>Milk</li>
-    </ol>
-    <ol type="A">
-      <li>Coffee</li>
-      <li>Tea</li>
-      <li>Milk</li>
-    </ol>
-    <ol type="a">
-      <li>Coffee</li>
-      <li>Tea</li>
-      <li>Milk</li>
-    </ol>
-    <ol type="I">
-      <li>Coffee</li>
-      <li>Tea</li>
-      <li>Milk</li>
-    </ol>
-    <ol type="i">
-      <li>Coffee</li>
-      <li>Tea</li>
-      <li>Milk</li>
-    </ol>
+
+    <h1>Словник впорядкованих і невпорядкованих списків та термінів</h1>
+
+    <section>
+      <strong>Список reversed</strong>
+      <ol reversed>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ol>
+    </section>
+
+    <section>
+      <strong>Список який починається з 5 <mark>(ol start)</mark></strong>
+      <ol start="5">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ol>
+    </section>
+
+    <section>
+      <strong>Список який починається з 5 <mark>(li value)</mark></strong>
+      <ol>
+        <li value="5">Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ol>
+    </section>
+
+    <section>
+      <strong>Список нумерований</strong>
+      <ol type="1">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ol>
+    </section>
+
+    <dialog open>
+      це вікно модалки
+    </dialog>
+
+    <section>
+      <strong>Список з великої букви</strong>
+      <ol type="A">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ol>
+    </section>
+
+    <section>
+      <strong>Список з маленької букви</strong>
+      <ol type="a">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ol>
+    </section>
+
+    <section>
+      <strong>Список римської нумерації <br>(великі літери)</strong>
+      <ol type="I">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+        <li>Bread</li>
+      </ol>
+    </section>
+
+    <section>
+      <strong>Список римської нумерації <br>(маленькі літери)</strong>
+      <ol type="i">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+        <li>Bread</li>
+      </ol>
+    </section>
+
+    <section>
+      <strong>Список <mark>невпорядкованих</mark> елементів</strong>
+      <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <section>
+      <strong>Список термінів</strong>
+      <dl>
+        <dt>Coffee</dt>
+        <dd>Black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>White cold drink</dd>
+      </dl>
+    </section>
+
+    <hr>
+
+    <section>
+      <strong>Деталізований список, що розгортається</strong>
+      <details>
+        <summary>Відкрити</summary>
+        <p>Це контент details</p>
+      </details>
+    </section>
+
   </body>
 </html>
